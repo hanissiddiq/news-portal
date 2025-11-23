@@ -1,3 +1,19 @@
+
+Source : https://chatgpt.com/g/g-p-6922fc2200648191945b44156a68360c-app-news-portal/c/6922fd6f-e4a4-8320-8b83-6046afb46099
+
+Authentifikasi
+Login As admin
+user = admin@gmail.com
+pass = password
+
+Login As author
+user = author@gmail.com
+pass = password
+
+Login As user
+user = user@gmail.com
+pass = password
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
