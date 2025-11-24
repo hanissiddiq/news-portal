@@ -43,8 +43,18 @@ class NewsController extends Controller {
             'published'=>'boolean',
             'image' => 'nullable|image|max:2048'
         ]);
+
+        $imagePath = null;
+        if ($req->hasFile('image')) {
+        $imagePath = $req->file('image')->store('news', 'public');
+    }
+
         $data['user_id'] = $req->user()->id;
         $data['slug'] = Str::slug($data['title']).'-'.uniqid();
+        if ($imagePath) {
+            $data['image'] = $imagePath;
+        }
+
         $news = News::create($data);
         return response()->json($news,201);
     }
